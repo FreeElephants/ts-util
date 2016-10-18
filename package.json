@@ -1,0 +1,28 @@
+{
+  "name": "ts-util",
+  "version": "0.0.1",
+  "description": "Java like Collection Framework and Data Structures (java.util package) for TypeScript. ",
+  "keywords": [
+    "collection",
+    "map",
+    "data structures",
+    "set",
+    "iterator"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "suite-builder": "suite-builder",
+    "pretest": "suite-builder tests/ && tsc && tsc tests/suite.ts",
+    "test": "node tests/suite.js"
+  },
+  "author": "samizdam <samizdam@inbox.ru>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "typescript": "^2.0",
+    "ts-x-unit": "^0.12.1"
+  }
+}

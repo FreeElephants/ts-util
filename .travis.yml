@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+    - "6"
+    - "5"
+    - "4"
+
+before_script:
+    - "npm run build"
+
+script:
+    - "npm test"
+
+after_success:
+    - "npm run coverage"
+    - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+    provider: npm
+    api_key: $NPMJS_COM_API_TOCKEN
+    email: "samizdam@inbox.ru"
+    skip_cleanup: true
+    on:
+      tags: true
