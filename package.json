@@ -15,6 +15,7 @@
     "dist"
   ],
   "scripts": {
+    "build": "tsc",
     "suite-builder": "suite-builder",
     "pretest": "suite-builder tests/ && tsc && tsc tests/suite.ts",
     "test": "node tests/suite.js"
