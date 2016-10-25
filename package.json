@@ -1,6 +1,6 @@
 {
   "name": "ts-util",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Java like Collection Framework and Data Structures (java.util package) for TypeScript. ",
   "keywords": [
     "collection",
