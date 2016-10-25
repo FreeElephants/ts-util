@@ -1,7 +1,9 @@
 .idea
+coverage
 node_modules
-typings
 dist
 *.tgz
 *.js
+*.js.map
 tests/suite.ts
+npm-debug.log

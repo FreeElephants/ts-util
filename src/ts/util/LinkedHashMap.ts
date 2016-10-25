@@ -1,4 +1,4 @@
-import {Map, Entry} from "./Map";
+import { Map } from "./Map";
 
 export class LinkedHashMap<K, V> implements Map<K, V> {
 
@@ -30,7 +30,7 @@ export class LinkedHashMap<K, V> implements Map<K, V> {
     public put(key: K, value: V): V {
         let index = this.keys.indexOf(key);
         let oldValue: V = null;
-        if (index > 0) {
+        if (index > -1) {
             oldValue = this.values[index];
         } else {
             this.keys.push(key);

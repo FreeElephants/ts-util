@@ -1,5 +1,5 @@
-import {AbstractUnitTestCase} from "ts-x-unit";
-import {SimpleIterator} from "../../../src/ts/util/SimpleIterator";
+import { AbstractUnitTestCase } from "ts-x-unit";
+import { SimpleIterator } from "../../../src/ts/util/SimpleIterator";
 
 export class SimpleIteratorTest extends AbstractUnitTestCase {
 

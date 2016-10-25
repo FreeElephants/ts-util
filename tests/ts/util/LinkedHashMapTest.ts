@@ -1,5 +1,5 @@
-import {LinkedHashMap} from "../../../src/ts/util/LinkedHashMap";
-import {AbstractUnitTestCase} from "ts-x-unit";
+import { LinkedHashMap } from "../../../src/ts/util/LinkedHashMap";
+import { AbstractUnitTestCase } from "ts-x-unit";
 
 export class LinkedHashMapTest extends AbstractUnitTestCase {
 
@@ -11,6 +11,21 @@ export class LinkedHashMapTest extends AbstractUnitTestCase {
         map.put(key, value);
         map.clear();
         this.assertSame(0, map.size());
+    }
+
+    public testIsEmpty() {
+        let map = new LinkedHashMap();
+        this.assertTrue(map.isEmpty());
+    }
+
+    public testPutOnExistsKey() {
+        let map: LinkedHashMap<Foo, Bar> = new LinkedHashMap();
+        let key: Foo = new Foo();
+        let value: Bar = new Bar();
+
+        map.put(key, value);
+        let oldValue = map.put(key, new Bar());
+        this.assertSame(value, oldValue);
     }
 
     public testContainsKey() {

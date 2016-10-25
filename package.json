@@ -17,13 +17,18 @@
   "scripts": {
     "build": "tsc",
     "suite-builder": "suite-builder",
-    "pretest": "suite-builder tests/ && tsc && tsc tests/suite.ts",
-    "test": "node tests/suite.js"
+    "pretest": "suite-builder tests/ && tsc && tsc tests/suite.ts -t ES5 --sourceMap",
+    "test": "node tests/suite.js",
+    "istanbul": "istanbul",
+    "remap-istanbul": "remap-istanbul",
+    "coverage": "npm run pretest && rm -rf coverage/* && istanbul cover tests/suite.js && remap-istanbul --input coverage/coverage.json --output coverage/html-report --type html && remap-istanbul --input coverage/coverage.json --output coverage/coverage-final.json"
   },
   "author": "samizdam <samizdam@inbox.ru>",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "typescript": "^2.0",
-    "ts-x-unit": "^0.12.1"
+    "istanbul": "^0.4.5",
+    "remap-istanbul": "^0.7.0",
+    "ts-x-unit": "^0.12.1",
+    "typescript": "^2.0"
   }
 }

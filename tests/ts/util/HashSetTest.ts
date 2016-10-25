@@ -1,5 +1,5 @@
-import {AbstractUnitTestCase} from "ts-x-unit";
-import {HashSet} from "../../../src/ts/util/HashSet";
+import { AbstractUnitTestCase } from "ts-x-unit";
+import { HashSet } from "../../../src/ts/util/HashSet";
 
 export class HashSetTest extends AbstractUnitTestCase {
 
@@ -36,7 +36,7 @@ export class HashSetTest extends AbstractUnitTestCase {
         this.assertTrue(set.contains(2));
     }
 
-    public testContainsAll(){
+    public testContainsAll() {
         let set: HashSet<Number> = new HashSet<Number>();
         set.add(1);
         set.add(2);

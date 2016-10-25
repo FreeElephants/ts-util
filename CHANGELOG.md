@@ -6,7 +6,19 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 See [ROADMAP](ROADMAP.md).
 
-## v0.1.0 - 2016-10-18
+## v0.0.2 - 2016-10-25
+### Added 
+- List interface. 
+- AbstractCollection class. 
+- ArrayList basic implementation (now it's common code with HashSet), only get method implemented. 
+
+### Fixed
+- LinkedHashMap.put with existed key. 
+
+### Internal
+- Correct coverage computing.  
+
+## v0.0.1 - 2016-10-18
 ### Added
 - Interfaces and classes ported from Java Collection Framework:
     - Collection

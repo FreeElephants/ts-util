@@ -1,5 +1,5 @@
-import {Iterator} from "./Iterator";
-import {Collection} from "./Collection";
+import { Iterator } from "./Iterator";
+import { Collection } from "./Collection";
 
 export class SimpleIterator<E> implements Iterator<E> {
 

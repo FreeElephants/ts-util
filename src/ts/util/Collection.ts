@@ -1,4 +1,4 @@
-import {Iterator} from "./Iterator";
+import { Iterator } from "./Iterator";
 
 /**
  * Base interface for Collection.
