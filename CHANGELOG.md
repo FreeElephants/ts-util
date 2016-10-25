@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 See [ROADMAP](ROADMAP.md).
 
+## v0.0.3 - 2016-10-25
+### Fixed
+- Export List interface. 
+
 ## v0.0.2 - 2016-10-25
 ### Added 
 - List interface. 
