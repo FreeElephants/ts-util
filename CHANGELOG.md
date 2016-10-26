@@ -6,6 +6,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 See [ROADMAP](ROADMAP.md).
 
+## v0.0.4 - 2016-10-26
+## Added
+- List methods: 
+    - indexOf()
+    - lastIndexOf()
+- AbstractList class. 
+
+## Fixed
+- ArrayList.add() behavior with already present in collection elements: override inherited method.  
+
 ## v0.0.3 - 2016-10-25
 ### Fixed
 - Export List interface. 

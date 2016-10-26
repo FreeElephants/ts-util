@@ -1,8 +1,7 @@
-import { AbstractCollection } from "./AbstractCollection";
 import { IndexOutOfBoundsException } from "./Exception";
-import { List } from "./List";
+import { AbstractList } from "./AbstractList";
 
-export class ArrayList<E> extends AbstractCollection<E> implements List<E> {
+export class ArrayList<E> extends AbstractList<E> {
 
     public get(index: number): E {
         if (typeof this.set[index] === "undefined") {
