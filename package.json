@@ -28,7 +28,7 @@
   "devDependencies": {
     "istanbul": "^0.4.5",
     "remap-istanbul": "^0.7.0",
-    "ts-x-unit": "^0.12.1",
+    "ts-x-unit": "^0.15.0",
     "typescript": "^2.0"
   }
 }

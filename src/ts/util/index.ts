@@ -2,6 +2,8 @@
  * index of library.
  */
 export * from "./Exception";
+export { AbstractList } from './AbstractList';
+export { AbstractCollection } from './AbstractCollection';
 export { ArrayList } from './ArrayList';
 export { Collection } from './Collection';
 export { HashSet } from './HashSet';
